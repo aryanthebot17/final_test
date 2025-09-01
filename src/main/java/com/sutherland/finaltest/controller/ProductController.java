@@ -11,18 +11,18 @@ import java.util.List;
 @RequestMapping("/api/products")
 public class ProductController {
 
-    @Autowired
+        @Autowired
     private ProductService productService;
 
-    // Endpoint to get all products
-    @GetMapping("/getAllProducts")
+       // Endpoint to get all products
+       @GetMapping("/getAllProducts")
     public List<Product> getAllProducts() {
         return productService.getAllProducts();
     }
 
-    // Endpoint to get products filtered by type and price
+        // Endpoint to get products filtered by type and price
     @GetMapping("/getByTypeAndPrice")
-    public List<Product> getByTypeAndPrice(@RequestParam String type, @RequestParam double price) {
+           public List<Product> getByTypeAndPrice(@RequestParam String type, @RequestParam double price) {
         return productService.getByTypeAndPrice(type, price);
     }
 }
