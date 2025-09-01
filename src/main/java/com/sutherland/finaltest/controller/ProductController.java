@@ -14,15 +14,15 @@ public class ProductController {
         @Autowired
     private ProductService productService;
 
-       // Endpoint to get all products
-       @GetMapping("/getAllProducts")
-    public List<Product> getAllProducts() {
+       //frst end point to the getll products
+          @GetMapping("/getAllProducts")
+                public List<Product> getAllProducts() {
         return productService.getAllProducts();
-    }
+           }
 
-        // Endpoint to get products filtered by type and price
+        // end pt to price
     @GetMapping("/getByTypeAndPrice")
-           public List<Product> getByTypeAndPrice(@RequestParam String type, @RequestParam double price) {
+             public List<Product> getByTypeAndPrice(@RequestParam String type, @RequestParam double price) {
         return productService.getByTypeAndPrice(type, price);
-    }
+        }
 }
