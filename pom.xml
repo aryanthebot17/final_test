@@ -10,7 +10,7 @@
     <packaging>jar</packaging>
 
     <repositories>
-        <!-- Maven Central Repository -->
+
         <repository>
             <id>central</id>
             <url>https://repo.maven.apache.org/maven2</url>
@@ -18,13 +18,13 @@
     </repositories>
 
     <dependencies>
-        <!-- Spring Boot Web Dependency for building REST APIs -->
+       
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
 
-        <!-- Spring Boot Test Dependency (for unit and integration tests) -->
+    
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
